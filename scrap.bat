@@ -1,1 +1,0 @@
-news-please -c config/

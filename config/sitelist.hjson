@@ -5,14 +5,10 @@
   # The same URL in combination with the same crawler may only appear once in this array.
   "base_urls" : [
     {
-      # nytimes.com should run pretty well with default config:
       "url": "http://www.nytimes.com/"
 
-      # to create an additional RssCrawler daemon for this site that runs every hour, we could either use
-      # "additional_rss_daemon": 3600
-      # or create an additional array-object with "crawler": "RssCrawler" and "daemonize": 3600
-      # it is not possible to create an additional_rss_daemon for a daemonized array-object
     }
+    
   ]
 }
 
