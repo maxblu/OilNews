@@ -1,9 +1,12 @@
 import datetime
-today    = datetime.date.today()
-tomorrow = today + datetime.timedelta(days=1)
 
-today_str	 = ("start_date = " + str(today)       + " 00:00:00\n")
-tomorrow_str = ("end_date = "   + str(tomorrow)    + " 00:00:00\n")
+
+# def update_time():
+today    = datetime.date.today()
+yesterday = today - datetime.timedelta(days=1)
+
+today_str	 = ("start_date = " + str(yesterday)       + " 00:00:00\n")
+tomorrow_str = ("end_date = "   + str(today)    + " 00:00:00\n")
 
 new_cfg_file_text = ""
 with open("config/config.cfg") as cfg_file:
